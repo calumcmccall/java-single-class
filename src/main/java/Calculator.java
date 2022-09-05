@@ -4,4 +4,8 @@ public class Calculator {
         return firstValue + secondValue;
     }
 
+    public int subtract(int firstValue, int secondValue){
+        return firstValue - secondValue;
+    }
+
 }
