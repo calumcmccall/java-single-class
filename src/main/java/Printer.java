@@ -21,6 +21,7 @@ public class Printer {
 
         if(sheetsToPrint < sheetsLeft){
             sheetsLeft -= sheetsToPrint;
+            toner -= sheetsToPrint;
         }
     }
 }
