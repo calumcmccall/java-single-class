@@ -9,4 +9,12 @@ public class Printer {
     public int getSheetsLeft(){
         return this.sheetsLeft;
     }
+
+    public void print(int numberOfPages, int numberOfCopies){
+        int sheetsToPrint = numberOfPages * numberOfCopies;
+
+        if(sheetsToPrint < sheetsLeft){
+            sheetsLeft -= sheetsToPrint;
+        }
+    }
 }

@@ -17,4 +17,16 @@ public class TestPrinter {
         assertEquals(50, printer.getSheetsLeft());
     }
 
+    @Test
+    public void printHaveEnoughSheets(){
+        printer.print(2, 5);
+        assertEquals(40, printer.getSheetsLeft());
+    }
+
+    @Test
+    public void printNotEnoughSheets(){
+        printer.print(20, 8);
+        assertEquals(50, printer.getSheetsLeft());
+    }
+
 }
